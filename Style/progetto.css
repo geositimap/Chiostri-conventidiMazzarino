@@ -1,0 +1,68 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #f4c430;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #f4c430;
+}
+
+conventi {
+    color: #f4c430;
+
+}
+
+.header-content img {
+    height: 80px;
+}
+
+main {
+    padding: 20px;
+    max-width: 970px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+h2 {
+    color: #f4c430;
+    font-size: 24px;
+}
+
+ol {
+    list-style-type:disc;
+    padding: 0; margin-left: 20px;
+}
+
+ol li {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.descrizione p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.mappa img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+.font{ justify-self: center;}
+h3{ justify-self: center;}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="it">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Style/padregesuiti.css" type="text/css">
+
+    <title> Sant'Ignazio </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-md">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="progetto.html"> Torna alla mappa</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+           <b>  Collegio dei Padri Gesuiti e Chiesa di 
+            Sant’Ignazio
+             </b>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div id="box3">
+      <div class="responsive-container">
+       <div class="button-container"> 
+        <table class="responsive-table">
+          <tr> 
+            <td class="text"> <z>Aspetto</z> <hr></td> 
+            </tr>
+            
+            <tr>
+              <td> <hr class="ttt"> <y>Testo </y> <hr>
+        </td>
+        </tr>
+        <tr>
+          <td> 
+             <button type="button" class="btn btn-warning" onclick="changeFontSize('increase')"> + T </button>
+        </td>
+        </tr>
+        <tr>
+         <td><button type="button" class="btn btn-warning" onclick="changeFontSize('decrease')">- T </button></td>
+        </tr>
+        <tr> 
+          <td> <hr class="tt"> <y> Immagine </y> <hr></td> 
+        </tr>
+        <tr>
+        <td> 
+          <button type="button" class="btn btn-warning" onclick="adjustImageSize('increase')"> + </button>
+        </td>
+        </tr>
+          <tr>
+            <td>
+              <button type="button" class="btn btn-warning" onclick="adjustImageSize('decrease')"> - </button>
+        </td>
+        </tr>
+    </table>
+      </div>
+  
+      
+  
+    </div>
+    
+    <div class="container">
+      <div class="box1"> </div>
+      
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/PG1.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/PG2.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="img/PG3.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="img/PG4.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="img/PG5.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="img/PG6.jpg" class="d-block w-100" >
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    <div id="box" ><div class="text-size">
+      <p> La monumentale opera progettata dal Principe Carlo Maria Carafa fu fatta eseguire 
+        per ringraziare il Santo fondatore di aver fatto riacquistare la salute al nobile.  <p>
+        La chiesa in stile barocco si presenta a tre navate ed ha ben cinque altari. <p>
+        Essa fu portata a termine solo ventitré anni dopo la morte del Principe e fu  dedicata a S. Ignazio 
+        di Loyola. <p>
+        Presenta un’architettura, unitamente a quella del convento e dell’oratorio, che esercita 
+        uno sfoggio artistico veramente ammirevole e molto apprezzabile. <p>
+        Il Collegio, con la Compagnia di Gesù che vi operava, ha avuto modo di formare coscienza e 
+        carattere di tante generazioni con l’insegnamento gratuito, voluto dal principe, a partire dal 1693 
+        al 1767. <p>
+        In seguito, alla  Compagnia di Gesù fu intimato l’esilio e quindi essa fu costretta ad 
+        abbandonarlo. <p>
+        Una lapide posta sopra il portone d'ingresso della chiesa, in ricordo del fondatore, riporta la seguente epigrafe: <p>
+  
+        «(...) FUNDATORI MAGNIFICAM AEDEM HANC CAROLUS M. CARAFFA MUNIFICENTISSIMUS BUTERAE PRINCEPS, SOCIETATIS NOSTRAE EIUSQUE SANCTO FUNDATORI ADDICTISSIMUS EREXIT ANNO A REPARATA SALUTE M.DCC.XVIII»</p>
+    </div>
+    </div>
+      <div class="info"> <a href="https://it.wikipedia.org/wiki/Convento_dei_Cappuccini_(Mazzarino)"> Scopri di piu'</a></div>
+  </div>
+
+  <script>
+    function changeFontSize(action) {
+        const content = document.querySelector('.text-size');
+        const style = window.getComputedStyle(content, null);
+        const currentSize = parseFloat(style.getPropertyValue('font-size'));
+        
+        if (action === 'increase') {
+            content.style.fontSize = (currentSize + 2) + 'px';
+        } else if (action === 'decrease') {
+            content.style.fontSize = (currentSize - 2) + 'px';
+        }
+    }
+</script>
+
+<script>
+  function adjustImageSize(action) {
+      const image = document.getElementById('carouselExampleInterval'); // Seleziona l'immagine
+      const currentWidth = image.clientWidth; // Ottieni la larghezza corrente
+
+      // Modifica la larghezza in base all'azione
+      if (action === 'increase') {
+          image.style.width = (currentWidth + 20) + 'px'; // Aumenta di 20px
+      } else if (action === 'decrease' && currentWidth > 50) {
+          image.style.width = (currentWidth - 20) + 'px'; // Riduci di 20px
+      }
+  }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
